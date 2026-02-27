@@ -1,0 +1,104 @@
+@keyframes changingImg {
+    0% {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/bg-safa2.jpg"); 
+        background-position: bottom
+    } 
+    
+    30%{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-Canal_Heights-Gallery-00.jpg");
+    }
+    60%{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-Damac_Bay-Gallery-15.jpg");
+        background-position: bottom 
+    }
+    80%{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-DAMAC_Islands_2-Gallery-20-AR.jpg");
+    }
+    100% {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-DUBAI_MARINA_COMMUNITY-1620x832.jpg");
+        }
+}
+#logoImg{
+width: 100px;
+height: 150px;
+}
+#logoText{
+width: auto;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+}
+#logoText h3{
+font-size: 20px;
+margin: 0;
+}
+#logoText p{
+font-size: 15px;
+margin: 0;
+}
+.arapey-regular {
+  font-family: "Arapey", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.services{
+    width: 320px;
+    height: 200px;
+    margin-bottom: 100px;
+}
+.services img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services span{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    bottom: 20%;
+    left: 35px;
+    color: #fff;
+    background-color: #514f4f;
+    border-radius: 15px;
+    padding: 0 10px;
+    text-align: end;
+}
+.partnership{ 
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 1) 100%);
+    padding: 5rem 0;
+}
+.partenaires{
+    width: 200px;
+    height: 200px;
+    margin: 30px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0.5) 75%, rgba(0, 0, 0, 0.1) 100%);
+    border-radius: 50%;
+}
+.partenaires img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#presentation h2{
+    margin-bottom: 200px;
+}
+.project{
+    width: 100%;
+    height: 340px;
+    object-fit:fill;
+    border-radius: 10px;
+}
+.carousel-image{
+    width: 100%;
+    height: 500px;
+}
+.img-modal{
+    object-fit: fill;
+    border-radius: 30px;
+    height: 100%;
+}
+

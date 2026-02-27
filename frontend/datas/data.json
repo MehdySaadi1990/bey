@@ -1,0 +1,33 @@
+[
+{   "id":1,
+    "name":"Valencia by DAMAC",
+    "image1":"assets/img/carroussel2/Valencia1.png",
+    "image2":"assets/img/carroussel2/Valencia2.png",
+    "image3":"assets/img/carroussel2/Valencia3.png",
+    "text": "lorem ipsum dolor"
+},
+{ 
+    "id":2,
+    "name":"Palm Villas by ELLINGTON",
+    "image1":"assets/img/carroussel2/PalmVillas1.png",
+    "image2":"assets/img/carroussel2/PalmVillas2.png",
+    "image3":"assets/img/carroussel2/PalmVillas3.png",
+    "text": "lorem ipsum dolor"  
+},
+{
+    "id":3,
+    "name":"The adress grand downtown by EMAAR",
+    "image1":"assets/img/carroussel2/agdt1.png",
+    "image2":"assets/img/carroussel2/agdt2.png",
+    "image3":"assets/img/carroussel2/agdt3.png",
+    "text": "lorem ipsum dolor"  
+},
+{
+    "id":4,
+    "name":"Pristine beach residences by SOBHA",
+    "image1":"assets/img/carroussel2/Pristine1.png",
+    "image2":"assets/img/carroussel2/Pristine2.png",
+    "image3":"assets/img/carroussel2/Pristine3.png",
+    "text": "lorem ipsum dolor"  
+}
+]
