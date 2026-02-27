@@ -1,4 +1,3 @@
-baseurl: "/bey"
 exclude:
   - backend
   - backend/node_modules
