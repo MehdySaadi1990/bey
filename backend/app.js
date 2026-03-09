@@ -3,6 +3,8 @@ const app = express()
 const mailRoutes = require('./routes/mailRoute')
 const mysql = require('mysql2')
 
+require('dotenv').config();
+
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
@@ -11,14 +13,14 @@ app.use((req, res, next) => {
 });
 
 
-
 const db = mysql.createPool({
   host: '127.0.0.1',
   user:'root',
-  password:'',
-  database:''
+  password:'Mehdy$@@di1990',
+  database:'bey'
 }).promise() 
  
+
 app.set('db', db);
 app.use(express.json())
 app.use('/api/contact', mailRoutes)

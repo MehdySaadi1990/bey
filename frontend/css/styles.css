@@ -11122,7 +11122,7 @@ transform: scale(1.1);
 
 .about-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.4) 25%,rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 1) 100%),url('../../assets/img/image-louvre.jpeg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.4) 25%,rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 1) 100%),url('../../assets/img/image-louvre.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;

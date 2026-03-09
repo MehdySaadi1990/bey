@@ -3,6 +3,8 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
+
+
 //
 // Scripts
 // 
@@ -90,13 +92,47 @@ function zoomImages() {
         image.style.transformOrigin = "center"
         image.style.transform = "scale(1)"
     })
-    });
+    });   
+}
+
+function sendForm(params) {
+    const name = document.getElementById('name')
+    const surname = document.getElementById('surname')
+    const email = document.getElementById('emailAddress')
+    const country = document.getElementById('country')
+    const budget = document.getElementById('budget')
+    const horizon = document.getElementById('horizon')
     
-    
+    const buttonSend = document.getElementById('submitButton')
+    buttonSend.addEventListener('click', async(e)=>{
+        e.preventDefault()
+        const dataToSend = {
+        username : name.value,
+        surname : surname.value,
+        email : email.value,
+        country : country.value,
+        budget : budget.options[budget.value].text,
+        horizon : horizon.options[horizon.value].text
+        }
+        console.log(dataToSend);
+        
+        await fetch('http://localhost:5000/api/contact/email',{
+             method : "POST",
+             headers: {
+                'Accept': 'application/json', 
+                'Content-Type': 'application/json'
+            },
+            body : JSON.stringify(dataToSend)
+        })
+        .then(res => res.json())
+        .catch(error => console.error(error))
+    })
     
 }
+
 zoomImages()
 getDatasByModalButton()
+sendForm()
 
 } );
 
