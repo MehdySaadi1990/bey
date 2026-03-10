@@ -3,7 +3,7 @@ const app = express()
 const mailRoutes = require('./routes/mailRoute')
 const mysql = require('mysql2')
 
-require('dotenv').config();
+require('dotenv').config()
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
