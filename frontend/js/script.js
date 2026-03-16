@@ -99,6 +99,7 @@ function sendForm(params) {
     const name = document.getElementById('name')
     const surname = document.getElementById('surname')
     const email = document.getElementById('emailAddress')
+    const phone = document.getElementById('phoneNumber')
     const country = document.getElementById('country')
     const budget = document.getElementById('budget')
     const horizon = document.getElementById('horizon')
@@ -110,6 +111,7 @@ function sendForm(params) {
         username : name.value,
         surname : surname.value,
         email : email.value,
+        phone : phone.value,
         country : country.value,
         budget : budget.options[budget.value].text,
         horizon : horizon.options[horizon.value].text

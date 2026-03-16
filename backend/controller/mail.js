@@ -3,18 +3,20 @@ const sendEmail = require('../utils/email')
 exports.contact= async (req,res,next)=>{
     try {
     const db = req.app.get('db');
-    const {username, surname, email, country, budget, horizon} = req.body
-        await db.query(`INSERT INTO users (username, surname, email, country)
+    const {username, surname, email, phone, country, budget, horizon} = req.body
+        await db.query(`INSERT INTO users (username, surname, email, country, phone)
          VALUES (
          '${username}',
          '${surname}',
          '${email}',
-         '${country}'
+         '${country}',
+         '${phone}'
          )`)
          const message = `
                     <p>Nom : ${username}</p><br/>
                     <p>Prénom : ${surname}</p><br/>
                     <p>Email : ${email}</p><br/>
+                    <p>Téléphone : ${phone}</p><br/>
                     <p>Pays : ${country}</p><br/>
                     <p>Budget : ${budget}</p><br/>
                     <p>Horizon : ${horizon}</p>
