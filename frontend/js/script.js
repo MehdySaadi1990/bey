@@ -115,7 +115,12 @@ function sendForm(params) {
         horizon : horizon.options[horizon.value].text
         }
         console.log(dataToSend);
-        
+        //masquer le formulaire
+        const form = document.getElementById('contactForm')
+        form.className = "visually-hidden"
+        // afficher le loader
+        const loader = document.getElementById('loaderPlace')
+        loader.className = "d-flex justify-content-center";
         await fetch('http://localhost:5000/api/contact/email',{
              method : "POST",
              headers: {
@@ -125,6 +130,14 @@ function sendForm(params) {
             body : JSON.stringify(dataToSend)
         })
         .then(res => res.json())
+        .then(()=>{
+            //cacher le loader
+            loader.className = "d-none";
+            //changer le message de demande
+            const contactText = document.getElementById('contactText')
+            contactText.textContent = 'Votre message a bien été envoyé'
+
+        })
         .catch(error => console.error(error))
     })
     

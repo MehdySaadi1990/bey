@@ -3,21 +3,31 @@
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/bg-safa2.jpg"); 
         background-position: bottom
     } 
-    
-    30%{
+    20%{
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-Canal_Heights-Gallery-00.jpg");
     }
-    60%{
+    40%{
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-Damac_Bay-Gallery-15.jpg");
         background-position: bottom 
     }
-    80%{
+    60%{
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-DAMAC_Islands_2-Gallery-20-AR.jpg");
     }
-    100% {
+    80% {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/c-DUBAI_MARINA_COMMUNITY-1620x832.jpg");
         }
+    100% {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 75%, #000 100%), url("../../assets/img/carroussel/bg-safa2.jpg"); 
+        background-position: bottom
+    } 
 }
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #logoImg{
 width: 100px;
 height: 150px;
@@ -101,4 +111,13 @@ margin: 0;
     border-radius: 30px;
     height: 100%;
 }
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #6c757d;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+
 
