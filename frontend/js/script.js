@@ -94,6 +94,47 @@ function zoomImages() {
     })
     });   
 }
+function displayForm() {
+    const priseContact = document.getElementById('demandeContact')
+    const contactForm = document.getElementById('contactForm')
+    const calendar = document.getElementById('calendar')
+    const clientDetail = document.getElementById('clientDetail')
+    const rendezVous = document.getElementById('rendezVous')
+    let open = false
+    priseContact.addEventListener('click', (e)=>{
+        open = !open
+        e.preventDefault()
+        if(open === true){
+          contactForm.classList.remove('visually-hidden')
+          clientDetail.classList.remove('visually-hidden')
+          rendezVous.classList.add('visually-hidden')
+        }
+        if(open === false){
+          contactForm.classList.add('visually-hidden')
+          clientDetail.classList.add('visually-hidden')
+          rendezVous.classList.remove('visually-hidden')
+        }
+    })
+
+    rendezVous.addEventListener('click', (e)=>{
+         e.preventDefault()
+        open = !open
+        const calendar = document.getElementById('calendar')
+        if(open === true){
+          contactForm.classList.add('visually-hidden')
+          clientDetail.classList.add('visually-hidden')
+          calendar.classList.remove('visually-hidden')
+          priseContact.classList.add('visually-hidden')
+        }
+        if(open === false){
+          calendar.classList.add('visually-hidden')
+          priseContact.classList.remove('visually-hidden')
+        }
+    })
+
+
+}
+
 
 function sendForm(params) {
     const name = document.getElementById('name')
@@ -119,7 +160,7 @@ function sendForm(params) {
         console.log(dataToSend);
         //masquer le formulaire
         const form = document.getElementById('contactForm')
-        form.className = "visually-hidden"
+        form.classList.add('visually-hidden')
         // afficher le loader
         const loader = document.getElementById('loaderPlace')
         loader.className = "d-flex justify-content-center";
@@ -134,7 +175,7 @@ function sendForm(params) {
         .then(res => res.json())
         .then(()=>{
             //cacher le loader
-            loader.className = "d-none";
+            loader.className = "d-none justify-content-center";
             //changer le message de demande
             const contactText = document.getElementById('contactText')
             contactText.textContent = 'Votre message a bien été envoyé'
@@ -148,6 +189,7 @@ function sendForm(params) {
 zoomImages()
 getDatasByModalButton()
 sendForm()
+displayForm()
 
 } );
 
