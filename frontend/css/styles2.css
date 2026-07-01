@@ -107,9 +107,12 @@ margin: 0;
     height: 500px;
 }
 .img-modal{
-    object-fit: fill;
+    object-fit:fill;
     border-radius: 30px;
     height: 100%;
+    @media (max-width:768px) {
+      height:50%;  
+    }
 }
 .loader {
   border: 6px solid #f3f3f3;

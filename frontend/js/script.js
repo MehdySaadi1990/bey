@@ -144,7 +144,6 @@ function sendForm(params) {
     const country = document.getElementById('country')
     const budget = document.getElementById('budget')
     const horizon = document.getElementById('horizon')
-    
     const buttonSend = document.getElementById('submitButton')
     buttonSend.addEventListener('click', async(e)=>{
         e.preventDefault()
