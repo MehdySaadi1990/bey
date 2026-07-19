@@ -18,7 +18,7 @@ const db = mysql.createPool({
   user:'root',
   password:'Mehdy$@@di1990',
   database:'bey'
-}).promise() 
+}).promise(console.log("Connexion sql réussie")) 
  
 
 app.set('db', db);
