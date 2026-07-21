@@ -163,7 +163,7 @@ function sendForm(params) {
         // afficher le loader
         const loader = document.getElementById('loaderPlace')
         loader.className = "d-flex justify-content-center";
-        await fetch('http://localhost:5000/api/contact/email',{
+        await fetch('https://backend.beyimmo.com/api/contact/email',{
              method : "POST",
              headers: {
                 'Accept': 'application/json', 
